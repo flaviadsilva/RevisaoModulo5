@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doce Bolos - Tradição e Sabor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero" id="Home">
+        <nav class="navbar">
+            <div class="logo">Doce <span>Bolos</span></div>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">Um amor de bolo</h1>
+            <p class="hero-subtitle">Receitas de família feitas com ingredientes selecionados e muito carinho.</p>
+            <a href="#cardapio" class="btn-cta">Ver Cardápio</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="Sobre" class="history-section">
+            <div class="image-box">
+                <img src="img/bolinho.png" alt="Bolo de chocolate decorado" class="img-responsive">
+            </div>
+            <div class="text-box">
+                <h2 class="section-title">Nossa História</h2>
+                <p>Desde 2000, a Doce Bolos traz o verdadeiro sabor do bolo artesanal para sua mesa. Cada fatia conta uma história de dedicação e qualidade.</p>
+                <ul class="benefits-list">
+                    <li>🍰 Ingredientes 100% Naturais</li>
+                    <li>🍓 Frutas Frescas da Estação</li>
+                    <li>⏰ Assados Diariamente</li>
+                    <li>🚚 Entrega em toda a Cidade</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <section id="cardapio" class="menu-section">
+        <h2 class="section-title" style="text-align: center;">Nosso Cardápio</h2>
+        <div class="carousel">
+            <button class="carousel-btn carousel-btn-prev" aria-label="Anterior">&#10094;</button>
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="img/chocolate.png" alt="Bolo de Chocolate">
+                        <div class="carousel-info">
+                            <h3>Bolo de Chocolate</h3>
+                            <p>Massa fofinha com calda de brigadeiro belga.</p>
+                            <span class="price">R$ 45,00</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/cenoura.png" alt="Bolo de Cenoura">
+                        <div class="carousel-info">
+                            <h3>Bolo de Cenoura</h3>
+                            <p>O clássico com cobertura crocante de chocolate.</p>
+                            <span class="price">R$ 35,00</span>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/red.png" alt="Red Velvet">
+                        <div class="carousel-info">
+                            <h3>Red Velvet</h3>
+                            <p>Massa aveludada com frosting de cream cheese.</p>
+                            <span class="price">R$ 55,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn-next" aria-label="Próximo">&#10095;</button>
+            <div class="carousel-dots">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+                <span class="carousel-dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="Contato" class="contact-section">
+            <div class="form-wrapper">
+                <h2>Encomende seu Bolo</h2>
+                <p>Preencha os dados abaixo e entraremos em contato.</p>
+                <form id="orderForm" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="nome" class="input-field" placeholder="Nome completo">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" class="input-field" placeholder="Seu melhor e-mail">
+                    </div>
+                    <div id="msg-container"></div>
+                    <button type="submit" class="btn-submit">Enviar Pedido</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <p>Estamos também nas redes sociais, nos acompanhem.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#Contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Doce Bolos.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
